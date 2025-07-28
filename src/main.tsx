@@ -4,10 +4,12 @@ import './index.css'
 import App from './App.tsx'
 // core styles are required for all packages
 import '@mantine/core/styles.css';
-
+import { MantineProvider } from '@mantine/core';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <MantineProvider>
+      <App />
+    </MantineProvider>
   </StrictMode>,
 )

@@ -1,15 +1,15 @@
 import React from "react";
-import Login from "./Login";
-import {BrowserRouter as Router,Routes, Route}
+import Login from "../page/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const AppRoutes = ()=>{
-    return(
+const AppRoutes = () => {
+    return (
         <Router>
             <Routes>
-                <Route path= "" ></Routes>
-            </Routers>
+                <Route path="/" element={<Login />} />
+            </Routes>
         </Router>
-    )
+    );
 }
 
 export default AppRoutes
